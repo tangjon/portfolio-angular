@@ -57,10 +57,10 @@ span.flag-icon.flag-icon-ca {
 }
 
 #section-location {
-  height: auto;
+  height: 250px;
   background-color: #233237;
   color: white;
-  padding-top: 10px;
+  text-align: center;
 }
 
 div#section-location {

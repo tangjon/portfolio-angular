@@ -12,8 +12,8 @@ export class PortfolioComponent implements OnInit {
 
   constructor() {
     this.PROJECTS = [];
-    this.PROJECTS.push(new PortfolioItem('Job Distribution System', 'assets/img/thumbnail-qmcd.png', 'August 2018'));
-    this.PROJECTS.push(new PortfolioItem('PC Part Picker', 'assets/img/thumbnail-pc-config.png', 'January 2018'));
+    this.PROJECTS.push(new PortfolioItem('Job Distribution System', 'assets/img/thumbnail-qmcd.png', 'January 2018'));
+    this.PROJECTS.push(new PortfolioItem('PC Part Picker', 'assets/img/thumbnail-pc-config.png', 'August 2018'));
     this.PROJECTS.push(new PortfolioItem('Carbon Tracker', 'assets/img/thumbnail-carbon-tracker.png', 'January 2017'));
     this.PROJECTS.push(new PortfolioItem('33rd Scouts Website', 'assets/img/thumbnail-scout33.png', 'June 2015'));
     this.PROJECTS.push(new PortfolioItem('OAS Badge Tracker', 'assets/img/thumbnail-oas.png', 'August 2017'));

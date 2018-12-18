@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {environment} from '../../environments/environment';
 
 @Component({
   selector: 'app-navigation',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor() { }
+  link_github = environment.link_github;
+  link_linkedIn = environment.link_github;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
