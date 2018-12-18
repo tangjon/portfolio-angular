@@ -1,3 +1,18 @@
 body {
   font-family: 'Roboto', sans-serif!important;
 }
+
+.header-title {
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.section {
+  padding: 2px 90px;
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 0 0;
+  }
+}

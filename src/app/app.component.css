@@ -2,11 +2,6 @@
   font-size: 78px;
 }
 
-.header-title {
-  font-size: 65px;
-  font-weight: bold;
-}
-
 #greeting #pt2 {
   font-weight: bold;
 }
@@ -27,22 +22,8 @@
   color: white;
 }
 
-.portfolio-item img {
-  width: 360px;
-}
-
-.portfolio-item {
-  margin: 8px;
-}
-
-.section {
-  padding: 2px 90px;
-}
 @media (max-width: 576px) {
   #headshot-picture {
     height: 300px;
-  }
-  .section {
-    padding: 0 0;
   }
 }

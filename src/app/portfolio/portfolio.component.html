@@ -1,0 +1,12 @@
+<div class="section" id="section-projects">
+  <span class="header-title">PROJECTS</span>
+  <div class="d-flex flex-wrap justify-content-center" style="background-color: #F5F5F5">
+    <div class="portfolio-item" *ngFor="let item of PROJECTS">
+      <img src="{{item.image_link}}">
+      <div class="portfolio-caption d-flex justify-content-between">
+        <div class="portfolio-item-name">{{item.project_name}}</div>
+        <div>DATE: {{item.project_date}}</div>
+      </div>
+    </div>
+  </div>
+</div>
