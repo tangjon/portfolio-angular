@@ -2,9 +2,11 @@
   <span class="header-title">PROJECTS</span>
   <div class="d-flex flex-wrap justify-content-center" style="background-color: #F5F5F5">
     <div class="portfolio-item" *ngFor="let item of PROJECTS">
-      <div class="hover-item">
-        <i class="fa fa-search-plus fa-3x"></i>
-      </div>
+      <a href="#portfolioModal-{{item.item_id}}" data-toggle="modal">
+        <div class="hover-item">
+          <i class="fa fa-search-plus fa-3x"></i>
+        </div>
+      </a>
       <img src="{{item.image_link}}">
       <div class="portfolio-caption d-flex justify-content-between">
         <div class="portfolio-item-name">{{item.project_name}}</div>
@@ -13,3 +15,6 @@
     </div>
   </div>
 </div>
+
+
+<app-qmcd></app-qmcd>
