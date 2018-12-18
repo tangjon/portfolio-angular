@@ -27,3 +27,42 @@
     height: 300px;
   }
 }
+
+.flag-icon-ca {
+  background-image: url(../assets/img/ca.svg);
+}
+
+
+.flag-icon-background {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.flag-icon {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  line-height: 1em;
+}
+.flag-icon:before {
+  content: "\00a0";
+}
+
+span.flag-icon.flag-icon-ca {
+  font-size: 2em;
+  margin: 8px 7px;
+
+}
+
+#section-location {
+  height: auto;
+  background-color: #233237;
+  color: white;
+  padding-top: 10px;
+}
+
+div#section-location {
+  font-size: 25px;
+}

@@ -12,3 +12,28 @@
   color: white;
   padding: 0 11px;
 }
+
+.hover-item {
+  background: rgb(230, 74, 74);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  text-align: center;
+}
+.hover-item i {
+  margin-top: 29%;
+  color: white;
+  font-size: 69px;
+}
+
+.hover-item:hover {
+  opacity: 1;
+}
+
+.portfolio-item {
+  position: relative;
+}
