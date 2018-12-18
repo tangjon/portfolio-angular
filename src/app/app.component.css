@@ -1,0 +1,48 @@
+#greeting #pt1, #greeting #pt2 {
+  font-size: 78px;
+}
+
+.header-title {
+  font-size: 65px;
+  font-weight: bold;
+}
+
+#greeting #pt2 {
+  font-weight: bold;
+}
+
+#headshot-picture {
+  height: 423px;
+}
+
+.info-body {
+  padding: 15px;
+  background-color: #F1F9FF;
+  border-radius: 8px;
+  margin: 15px 0px;
+}
+
+.info-header {
+  background-color: #2D445F;
+  color: white;
+}
+
+.portfolio-item img {
+  width: 360px;
+}
+
+.portfolio-item {
+  margin: 8px;
+}
+
+.section {
+  padding: 2px 90px;
+}
+@media (max-width: 576px) {
+  #headshot-picture {
+    height: 300px;
+  }
+  .section {
+    padding: 0 0;
+  }
+}
