@@ -37,3 +37,41 @@
 .portfolio-item {
   position: relative;
 }
+
+.modal-dialog-project {
+  max-width: 100%!important;
+  height: 100%;
+  margin: 18px!important;
+}
+.modal-header-project {
+  text-align: center;
+}
+.modal-content {
+  height: 100%;
+}
+.modal-close{
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 45px;
+}
+.modal-title-project {
+  font-size: 4.5em;
+}
+.project-details ul {
+  display: inline-flex;
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+.project-details ul li {
+  margin: 0 7px;
+}
+
+.project-details {
+  text-align: center;
+}

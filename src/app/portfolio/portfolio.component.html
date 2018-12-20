@@ -16,5 +16,49 @@
   </div>
 </div>
 
+<div *ngFor="let project of PROJECTS">
+  <div class="modal fade" id="portfolioModal-{{project.item_id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+       aria-hidden="true">
+    <div class="modal-dialog modal-dialog-project" role="document">
+      <div class="modal-content">
+        <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+          <i class="fa fa-fw fa-times"></i>
+        </button>
+        <div class="modal-header-project">
+          <div class="modal-title-project" id="{{project.item_id}}Label">{{project.project_name}}</div>
+        </div>
+        <img src="{{project.image_link}}" style="width: 40%; margin: 0 auto">
+        <div class="project-details">
+          <ul>
+            <li>Developed For:
+              <strong>{{project.client}}
+              </strong>
+            </li>
+            <li>Type:
+              <strong>{{project.application_type}}
+              </strong>
+            </li>
+            <li>Date:
+              <strong>{{project.project_date}}
+              </strong>
+            </li>
+            <li>Life Cycle:
+              <strong>{{project.lifeCycle}}</strong>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div [innerHTML]="project.description"></div>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<app-qmcd></app-qmcd>
+
+<!--<app-qmcd></app-qmcd>-->
