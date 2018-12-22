@@ -1,2 +1,0 @@
-An Android application to give users a personal and understandable view of their daily CO2 emissions. Developed with the goal to help users improve their choices to reduce emissions.
-<li>Developed the persistent data tracking between application restarts an using an SQL Lite Database</li>

@@ -1,1 +1,0 @@
- A website developed for the 33rd Kerrisdale Scout Group. Scouts Canada is a non-profit organization that offers a world of adventure, outdoor experience and friendship to 17 million Canadian youth.<li>August 2017: New Wordpress theme developed for 33rd KC to replace a general them from the wordpress store.</li>
