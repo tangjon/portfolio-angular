@@ -1,0 +1,28 @@
+h1#name {
+  font-size: 5em;
+}
+
+#blurb {
+  background-color: white;
+  padding: 3px 16px;
+  margin: 0 auto;
+  border-left: 9px solid #296eb9;
+}
+
+.color-strip {
+  width: 1em;
+}
+
+
+@media only screen and (min-width: 438px) {
+  #blurb {
+    width: max-content;
+  }
+}
+
+
+@media only screen and (min-width: 320px) {
+  h1#name {
+    font-size: 4em;
+  }
+}

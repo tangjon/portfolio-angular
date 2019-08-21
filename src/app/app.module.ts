@@ -2,19 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NavigationComponent } from './navigation/navigation.component';
-import { FooterComponent } from './footer/footer.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { QmcdComponent } from './portfolio/modal/qmcd/qmcd.component';
+import { HeaderComponent } from './header/header.component';
+import { IntroComponent } from './intro/intro.component';
+import { ProjectsComponent } from './projects/projects.component';
 import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent,
-    FooterComponent,
-    PortfolioComponent,
-    QmcdComponent
+    HeaderComponent,
+    IntroComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

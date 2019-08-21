@@ -3,18 +3,16 @@ import {PortfolioItem} from './portfolio-item';
 import {HttpClient} from '@angular/common/http';
 
 @Component({
-  selector: 'app-portfolio',
-  templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.css']
 })
-export class PortfolioComponent implements OnInit {
+export class ProjectsComponent implements OnInit {
 
-  PROJECTS: PortfolioItem[];
+  PROJECTS: PortfolioItem[] = [];
   baseAssetURL = 'assets/project_descriptions';
 
   constructor(public http: HttpClient) {
-    this.PROJECTS = [];
-
     /** PROJECT: Job Distribution System
      */
     let p_qmcd = new PortfolioItem('Job Distribution System',
@@ -40,14 +38,14 @@ export class PortfolioComponent implements OnInit {
      */
     let p_33sc = new PortfolioItem('33rd Scouts Website', 'assets/img/thumbnail-scout33.png', 'June 2015', '33sc',
       '33rd Scout Group', 'WordPress', 'Active/Released'
-      );
+    );
     this.addDescriptionFromFile(p_33sc, 'p_33sc.html');
     this.PROJECTS.push(p_33sc);
 
     /** PROJECT: MPS Point Tracker
      */
     let p_oas = new PortfolioItem('OAS Badge Tracker', 'assets/img/thumbnail-oas.png', 'August 2017', 'oas',
-    '33rd Scout Group', 'Real-time Firebase Web Application','Complete');
+      '33rd Scout Group', 'Real-time Firebase Web Application', 'Complete');
     this.addDescriptionFromFile(p_oas, 'p_oas.html');
     this.PROJECTS.push(p_oas);
 
@@ -65,6 +63,14 @@ export class PortfolioComponent implements OnInit {
     //   );
     // this.addDescriptionFromFile(p_mps, 'p_mps.txt');
     // this.PROJECTS.push(p_mps);
+
+  }
+
+  // USE THIS TO ADD PROJECTS
+  addProject(projectName, imageLink, projectDate, uniqueId, client, applicationType, lifeCycleStatus, htmlFile) {
+    let prj = new PortfolioItem(projectName, imageLink, projectDate, uniqueId, client, applicationType, lifeCycleStatus);
+    this.addDescriptionFromFile(prj, htmlFile);
+    this.PROJECTS.push(prj);
   }
 
   ngOnInit() {
@@ -73,6 +79,5 @@ export class PortfolioComponent implements OnInit {
   addDescriptionFromFile(project: PortfolioItem, fileName: string): void {
     this.http.get(this.baseAssetURL + '/' + fileName, {responseType: 'text'}).subscribe(((d: string) => project.description = d), () => project.description = '');
   }
-
 
 }

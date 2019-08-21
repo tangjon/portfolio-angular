@@ -1,0 +1,38 @@
+img#headshot-picture {
+  border: 11px solid white;
+  border-radius: 50%;
+  width: 30%;
+}
+
+#my-links i {
+  margin-right: 8px;
+}
+
+#my-links div{
+  font-size: 2em;
+}
+
+#my-links {
+  margin-top: 10px;
+
+
+}
+/*div#my-links {*/
+/*  padding-top: 240px;*/
+/*}*/
+
+/*img#headshot-picture {*/
+/*  position: relative;*/
+/*  top: 161px;*/
+/*}*/
+
+@media only screen and (max-width: 991px) {
+  img#headshot-picture {
+    border: 8px solid white;
+    width: 50%;
+  }
+}
+
+#my-links a{
+  color: #0b1117
+}
